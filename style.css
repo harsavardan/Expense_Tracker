@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9fafb;
+    font-family: 'IBM Plex Sans','Sans-serif';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    cursor: default;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 400px;
+}
+
+.income{
+    width: 200px;
+}
+
+#inc{
+    color: green;
+}
+
+.expense{
+    width: 200px;
+}
+
+#exp{
+    color: red;
+}
+
+.container hr{
+    height:50px;
+    margin: auto;
+}
+
+h3{
+    text-align: center;
+}
+
+.his{
+    width: 400px;
+    background-color: white;
+    height: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.tra{
+    font-size: 20px;
+    margin-top: -19px;
+    cursor: default;
+    min-height: 40px;
+    max-height: auto;
+    display: flex;
+    margin-top: 1px;
+}
+
+.type{
+    padding: 5px;
+    height: auto;
+    max-width: 10px;
+}
+
+.amountg{
+    position: absolute;
+    color: green;
+    padding: 5px;
+    margin-left: 270px;
+}
+
+.amountr{
+    position: absolute;
+    color: red;
+    padding: 5px;
+    margin-left: 270px;
+}
+
+.del{
+    visibility: visible;
+}
+
+i{
+    padding: 9px;
+    color:red;
+    position: absolute;
+    z-index: 0;
+    cursor: pointer;
+    margin-left: 390px;
+}
+
+i:hover{
+    padding: 9px;
+    color:white;
+    background-color: red;
+}
+
+.tra:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+.form-control{
+    margin-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    color: #000;
+    display: block;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.form-control small{
+    color: #000;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    width:100%;
+    background-color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form button{
+    cursor: pointer;
+    background-color: #025d99;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    width:100%;
+}

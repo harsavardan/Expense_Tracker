@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+        <h2>Expense Tracker</h2>
+        <h5>YOUR BALANCE</h5>
+        <h2 id="tot">Rs: 0.00</h2>
+        <div class="container">
+            <div class="income">
+                <h3>INCOME</h3>
+                <h3 id="inc">Rs: 0.00</h3>
+            </div>
+            <hr>
+            <div class="expense">
+                <h3>EXPENSE</h3>
+                <h3 id="exp">Rs: 0.00</h3>
+            </div>
+        </div>
+        <h2>History</h2>
+        <hr>
+        <br>
+        <div class="his" id="his">
+        </div>
+        <form class="form" id="form">
+            <h2>Add new transaction</h2>
+            <hr>
+            <div class="form-control">
+                <label for="t">Text</label>
+                <input onkeyup="enable()" type="text" id="t" placeholder="Enter text...">
+            </div>
+            <div class="form-control">
+                <label for="a">Amount</label>
+                <small>(negative - expense, positive - income)</small>
+                <input  onkeyup="enable()" type="number" id="a" placeholder="Enter amount...">
+            </div>
+            <button id="sub" type="submit" disabled>Add Transaction</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
